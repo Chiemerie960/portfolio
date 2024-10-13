@@ -28,7 +28,7 @@ const Navigation = () => {
       </Burger>
       <Navbar className={open ? "open" : ""}>
         <div className="nav-image">
-          <LazyLoadImage src={NavImage} alt="Emerie"/>
+          <LazyLoadImage src={NavImage} alt="Emerie" />
           <div className="image-text">CODE BANDIT</div>
         </div>
         <div className="nav-links">
@@ -164,6 +164,9 @@ const Navbar = styled.div`
         gap: 1rem;
         align-items: center;
       }
+    }
+    .active {
+      color: var(--text-secondary-color);
     }
   }
   .nav-footer {
