@@ -75,7 +75,7 @@ const Navigation = () => {
             <FaLinkedin />
           </div>
           <p>
-            2002 &copy; CodeBandit.
+            2009 &copy; CodeBandit.
             <br /> All rights reserved.
           </p>
         </div>
