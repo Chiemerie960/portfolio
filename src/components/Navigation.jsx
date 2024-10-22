@@ -32,7 +32,7 @@ const Navigation = () => {
           <div className="image-text">CODE BANDIT</div>
         </div>
         <div className="nav-links">
-          <div className="nav-link">
+          <div className="nav-link" onClick={toggle}>
             <NavLink
               to={"/"}
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -41,25 +41,25 @@ const Navigation = () => {
               Home
             </NavLink>
           </div>
-          <div className="nav-link">
+          <div className="nav-link" onClick={toggle}>
             <NavLink to={"/aboutme"}>
               <CiUser />
               About Me
             </NavLink>
           </div>
-          <div className="nav-link">
+          <div className="nav-link" onClick={toggle}>
             <NavLink to={"/myresume"}>
               <FaRegNewspaper />
               resume
             </NavLink>
           </div>
-          <div className="nav-link">
+          <div className="nav-link" onClick={toggle}>
             <NavLink to={"/portfolio"}>
               <IoBriefcaseOutline />
               Portfolio
             </NavLink>
           </div>
-          <div className="nav-link">
+          <div className="nav-link" onClick={toggle}>
             <NavLink to={"/contactme"}>
               <CiMail />
               Contact
