@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import NavImage from "../assets/nav-image.jpg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiFillTikTok, AiOutlineHome } from "react-icons/ai";
 import { CiMail, CiUser } from "react-icons/ci";
 import "./nav.css";
@@ -13,7 +13,7 @@ import {
   FaRegNewspaper,
   FaTwitterSquare,
 } from "react-icons/fa";
-import { IoBriefcaseOutline } from "react-icons/io5";
+import { IoBriefcaseOutline, IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navigation = () => {
@@ -24,7 +24,7 @@ const Navigation = () => {
   return (
     <>
       <Burger className="burger" onClick={toggle}>
-        <GiHamburgerMenu />
+        {!open ? <GiHamburgerMenu /> : <IoClose />}
       </Burger>
       <Navbar className={open ? "open" : ""}>
         <div className="nav-image">
@@ -33,34 +33,37 @@ const Navigation = () => {
         </div>
         <div className="nav-links">
           <div className="nav-link">
-            <Link to={"/"}>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <AiOutlineHome />
               Home
-            </Link>
+            </NavLink>
           </div>
           <div className="nav-link">
-            <Link to={"/aboutme"}>
+            <NavLink to={"/aboutme"}>
               <CiUser />
               About Me
-            </Link>
+            </NavLink>
           </div>
           <div className="nav-link">
-            <Link to={"/myresume"}>
+            <NavLink to={"/myresume"}>
               <FaRegNewspaper />
               resume
-            </Link>
+            </NavLink>
           </div>
           <div className="nav-link">
-            <Link>
+            <NavLink to={"/portfolio"}>
               <IoBriefcaseOutline />
               Portfolio
-            </Link>
+            </NavLink>
           </div>
           <div className="nav-link">
-            <Link to={"/contactme"}>
+            <NavLink to={"/contactme"}>
               <CiMail />
               Contact
-            </Link>
+            </NavLink>
           </div>
         </div>
         <div className="nav-footer">
@@ -164,9 +167,10 @@ const Navbar = styled.div`
         gap: 1rem;
         align-items: center;
       }
-    }
-    .active {
-      color: var(--text-secondary-color);
+      .active {
+        color: var(--text-secondary-color);
+        font-weight: 700;
+      }
     }
   }
   .nav-footer {
