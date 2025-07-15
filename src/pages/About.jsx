@@ -14,18 +14,19 @@ const About = () => {
       </div>
       <div className="about-details">
         <div className="about-text">
-          <h2>Web developer</h2>
+          <h2>Web & Mobile developer</h2>
           <p>
-            I am a Frontend Developer. I am passionate about creating beautiful
-            and intuitive user interfaces. I am always looking for new and
-            innovative ways to improve my skills.
+            I am a Frontend and Mobile Developer. I am passionate about creating
+            beautiful and intuitive user interfaces. I am always looking for new
+            and innovative ways to improve my skills with tools such as ReactJs,
+            ReactNative, Bootstrap, Tailwindcss and many others .
           </p>
           <p>
             I have a keen eye for design and a strong focus on delivering
             seamless user experiences. Throughout my career, I've worked on a
             wide range of projects, from e-commerce platforms to single-page
             applications, collaborating with designers and back-end developers
-            to create engaging and functional websites.
+            to create engaging and functional websites and mobile applications.
           </p>
           <p>
             I thrive in fast-paced environments and enjoy learning new
@@ -68,6 +69,15 @@ const About = () => {
               I can build beautiful and scalable websites that not only provide
               an exceptional user experience but are also optimized for
               performance and maintainability.
+            </p>
+          </div>
+          <div>
+            <IoIosLaptop />
+            <h3>Mobile Development</h3>
+            <p>
+              I develop cross-platform mobile applications that run smoothly on
+              both Android and iOS, ensuring consistency, performance, and a
+              great user experience.
             </p>
           </div>
           <div>
@@ -377,7 +387,7 @@ const Aboutme = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-  padding: 3rem 1rem;
+    padding: 3rem 1rem;
     .about-header {
       display: flex;
       justify-content: space-between;

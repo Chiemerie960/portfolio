@@ -14,7 +14,7 @@ const Home = () => {
             CODE <span>BANDIT</span> &lt;/&gt;
           </h2>
           <p>
-            I am a <span>Frontend Developer</span>
+            I am a <span>Web & Mobile Developer</span>
           </p>
         </div>
       </div>
