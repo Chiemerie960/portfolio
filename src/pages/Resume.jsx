@@ -80,6 +80,7 @@ const Resume = () => {
           <div>Javascript</div>
           <div>ReactJs</div>
           <div>Redux</div>
+          <div>ReactNative</div>
           <div>Bootstrap</div>
           <div>Tailwind</div>
         </div>
