@@ -1,7 +1,7 @@
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosLaptop } from "react-icons/io";
-import { IoEyeOutline } from "react-icons/io5";
+import { IoEyeOutline, IoPhonePortraitOutline } from "react-icons/io5";
 import { MdDevices } from "react-icons/md";
 import styled from "styled-components";
 
@@ -72,7 +72,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <IoIosLaptop />
+            <IoPhonePortraitOutline />
             <h3>Mobile Development</h3>
             <p>
               I develop cross-platform mobile applications that run smoothly on
