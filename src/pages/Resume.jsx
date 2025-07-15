@@ -13,6 +13,19 @@ const Resume = () => {
         <div className="experience">
           <h2>Experience</h2>
           <div>
+            <h3>MOBILE DEVELOPER</h3>
+            <h5>
+              Partnered with other developers on a medical based application |
+              freelance
+            </h5>
+            <p>
+              Developed and enhanced the user interface for a mobile
+              representation of a skin disease detector. Bringing medicine and
+              practicality together to create easy access to infection
+              prediction and dermatologist prescription to users.
+            </p>
+          </div>
+          <div>
             <h3>FRONTEND DEVELOPER</h3>
             <h5>Creme Suite Hotels | freelance</h5>
             <p>
