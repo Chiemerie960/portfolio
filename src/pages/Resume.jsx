@@ -13,7 +13,7 @@ const Resume = () => {
         <div className="experience">
           <h2>Experience</h2>
           <div>
-            <h3>MOBILE DEVELOPER</h3>
+            <h3>Mobile Developer</h3>
             <h5>
               Partnered with other developers on a medical based application |
               freelance
@@ -26,7 +26,7 @@ const Resume = () => {
             </p>
           </div>
           <div>
-            <h3>FRONTEND DEVELOPER</h3>
+            <h3>Front End Developer</h3>
             <h5>Creme Suite Hotels | freelance</h5>
             <p>
               Developed and enhanced the user interface for the Creme Suite
