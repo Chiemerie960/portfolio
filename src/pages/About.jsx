@@ -429,7 +429,7 @@ const Aboutme = styled.div`
           font-family: var(--text-regular);
           font-weight: 400;
           line-height: 26px;
-          text-align: justify;
+          text-align: left;
           color: var(--text-paragraph);
         }
       }
