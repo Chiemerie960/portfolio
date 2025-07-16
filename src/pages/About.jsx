@@ -6,6 +6,15 @@ import { MdDevices } from "react-icons/md";
 import styled from "styled-components";
 
 const About = () => {
+  const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = './assets/Emerie.pdf';
+  link.download = 'Emerie-Eze-Resume.pdf'; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
   return (
     <Aboutme>
       <div className="about-header">
@@ -55,7 +64,7 @@ const About = () => {
             <p>
               <span>Freelance</span> : Available
             </p>
-            <button>Download Resume</button>
+            <button onClick={handleDownload}>Download Resume</button>
           </div>
         </div>
       </div>
