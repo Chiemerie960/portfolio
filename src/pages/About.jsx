@@ -8,7 +8,7 @@ import styled from "styled-components";
 const About = () => {
   const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = '/assets/resume.pdf';
+  link.href = '/assets/Emerie.pdf';
   link.setAttribute('download', 'Emerie-Eze-Resume.pdf');
   document.body.appendChild(link);
   link.click();
